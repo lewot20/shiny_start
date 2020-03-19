@@ -7,10 +7,10 @@ ui <- fluidPage(
     sidebarPanel(
       h4("Create demographic maps with information from the 2010 US Census"),
       code('hello world'),
-      selectInput("select", h3("Choose a variabilie to display"), 
+      selectInput("select", h3("Select box"), 
                   choices = list("Choice 1" = 1, "Choice 2" = 2,
-                                 "Choice 3" = 3), selected = 1),
-      sliderInput("slider", h3("Range of display"),
+                                 "Choice 3" = 3), selected = 1)),
+      sliderInput("slider1", h3("Sliders"),
                   min = 0, max = 100, value = 50),
       
       img(src = "rstudio.png", height = 70, width = 200),
@@ -18,7 +18,6 @@ ui <- fluidPage(
       "Shiny is a product of ", 
       span("RStudio", style = "color:blue")
     ),
-    
     mainPanel(
       h1("Introducing Shiny"),
       p("Shiny is a new package from RStudio that makes it ", 

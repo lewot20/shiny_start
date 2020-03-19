@@ -1,5 +1,6 @@
 library(rsconnect)
 library(shiny)
+install.packages("shiny")
 
 options(rsconnect.http.trace = TRUE)
 options(rsconnect.http.verbose = TRUE)
